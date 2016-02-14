@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
- 
+
 # Old routes 
 #  get 'static_pages/help'
 #  get 'static_pages/about'
 #  get 'static_pages/contact'
+#  get 'users/new'
   
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -15,6 +16,7 @@ Rails.application.routes.draw do
   get 'help' => 'static_pages#help' # routes URL /help to help action in the Static Pages controller
   get 'about' => 'static_pages#about'
   get 'contact' => 'static_pages#contact'
+  get 'signup' => 'users#new'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
